@@ -12,53 +12,59 @@ namespace ChangeMaker
         {
             // this is ChangeMaker
             ChangeMaker(3.18);
+            Console.WriteLine();
             ChangeMaker(0.99);
+            Console.WriteLine();
             ChangeMaker(12.93);
             Console.WriteLine();
             ChangeMaker(4.17);
 
+            //keeps window oppen
             Console.ReadKey();
         }
         static void ChangeMaker(double number)
         {
+            //the function
+            double change = number;
             int QuartersTot = 0;
             int DimesTot = 0;
             int NickelsTot = 0;
             int PenniesTot = 0;
-            double Quarters = 0.25;
-            double Dimes = 0.10;
-            double Nickels = 0.05;
-            double Pennies = 0.01;
-
-            while (number >= 0.25 )
+            
+            //filter out quarters
+            while (change >= 0.25 )
             {
                 QuartersTot += 1;
-                number = number - .25;
+                change = change - .25;
             }
 
-            while (number >= 0.10)
+            //filter out dimes
+            while (change >= 0.10)
             {
                 DimesTot += 1;
-                number = number - .10;
+                change = change - .10;
             }
 
-            while (number >= 0.05)
+            //filter out nickels
+            while (change >= 0.05)
             {
                 NickelsTot += 1;
-                number = number - .05;
+                change = change - .05;
             }
 
-            while (number >= 0.01)
+            //filter out pennies
+            while (change >= 0.01)
             {
                 PenniesTot += 1;
-                number = number - .01;
+                change = change - .01;
             }
 
+            //printout the function
             Console.WriteLine(number);
-            Console.WriteLine("quarters" + QuartersTot);
-            Console.WriteLine("dimes" + DimesTot);
-            Console.WriteLine("nickels" + NickelsTot);
-            Console.WriteLine("pennies" + PenniesTot);
+            Console.WriteLine("quarters: " + QuartersTot);
+            Console.WriteLine("dimes: " + DimesTot);
+            Console.WriteLine("nickels: " + NickelsTot);
+            Console.WriteLine("pennies: " + PenniesTot);
         }
 
     }
