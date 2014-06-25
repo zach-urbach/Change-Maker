@@ -33,25 +33,32 @@ namespace ChangeMaker
             while (number >= 0.25 )
             {
                 QuartersTot += 1;
-                number = number - 0.25;
+                number = number - .25;
             }
+
             while (number >= 0.10)
             {
                 DimesTot += 1;
-                number = number - 0.10;
+                number = number - .10;
             }
+
             while (number >= 0.05)
             {
                 NickelsTot += 1;
-                number = number - 0.05;
+                number = number - .05;
             }
+
             while (number >= 0.01)
             {
                 PenniesTot += 1;
-                number = number - 0.01;
+                number = number - .01;
             }
 
-
+            Console.WriteLine(number);
+            Console.WriteLine("quarters" + QuartersTot);
+            Console.WriteLine("dimes" + DimesTot);
+            Console.WriteLine("nickels" + NickelsTot);
+            Console.WriteLine("pennies" + PenniesTot);
         }
 
     }
