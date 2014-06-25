@@ -11,13 +11,11 @@ namespace ChangeMaker
         static void Main(string[] args)
         {
             // this is ChangeMaker
-            double changeA = 3.18;
-            double changeB = 0.99;
-            double changeC = 12.93;
-
-            double change = 4.17;
-            
-
+            ChangeMaker(3.18);
+            ChangeMaker(0.99);
+            ChangeMaker(12.93);
+            Console.WriteLine();
+            ChangeMaker(4.17);
 
             Console.ReadKey();
         }
