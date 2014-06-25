@@ -19,8 +19,20 @@ namespace ChangeMaker
 
             Console.ReadKey();
         }
+        static void ChangeMaker(double number)
+        {
+            double Quarters = 0.25;
+            double Dimes = 0.10;
+            double Nickels = 0.05;
+            double Pennies = 0.01;
+
+            if(number)
+            {
+                
+            }
 
 
+        }
 
     }
 }
