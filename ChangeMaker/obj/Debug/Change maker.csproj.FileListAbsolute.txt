@@ -1,0 +1,2 @@
+C:\Users\Technologist\Documents\GitHub\Change maker\bin\Debug\Change maker.exe.config
+C:\Users\Technologist\Documents\GitHub\ChangeMaker\bin\Debug\Change maker.exe.config
